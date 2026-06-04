@@ -8,7 +8,9 @@
     "build": "npm run build --prefix client",
     "serve": "npm run build && NODE_ENV=production node server.js",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "launch": "bash launch.sh",
+    "run_game": "bash launch.sh"
   },
   "dependencies": {
     "cors": "^2.8.5",
