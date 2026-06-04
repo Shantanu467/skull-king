@@ -1,0 +1,22 @@
+{
+  "name": "skull-king",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "concurrently \"node --watch server.js\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "serve": "npm run build && NODE_ENV=production node server.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "vitest": "^1.6.0"
+  }
+}
